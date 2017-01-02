@@ -1,0 +1,25 @@
+{
+  "name": "@riim/escape-html",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/escapeHTML.js",
+  "typings": "dist/escapeHTML.d.ts",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riim/escape-html.git"
+  },
+  "author": "Dmitry Vibe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Riim/escape-html/issues"
+  },
+  "homepage": "https://github.com/Riim/escape-html#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "typescript": "^2.1.4"
+  }
+}
