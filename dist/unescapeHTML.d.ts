@@ -1,1 +1,1 @@
-export default function unescapeHTML(str: string): string;
+export declare function unescapeHTML(str: string): string;

@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var reEscapableChars = /[&<>"]/g;
 var charToEscapedMap = Object.create(null);
 charToEscapedMap['&'] = '&amp;';
@@ -8,5 +9,4 @@ charToEscapedMap['"'] = '&quot;';
 function escapeHTML(str) {
     return reEscapableChars.test(str) ? str.replace(reEscapableChars, function (chr) { return charToEscapedMap[chr]; }) : str;
 }
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = escapeHTML;
+exports.escapeHTML = escapeHTML;

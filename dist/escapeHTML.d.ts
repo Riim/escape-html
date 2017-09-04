@@ -1,1 +1,1 @@
-export default function escapeHTML(str: string): string;
+export declare function escapeHTML(str: string): string;

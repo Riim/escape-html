@@ -6,6 +6,6 @@ charToEscapedMap['<'] = '&lt;';
 charToEscapedMap['>'] = '&gt;';
 charToEscapedMap['"'] = '&quot;';
 
-export default function escapeHTML(str: string): string {
-	return reEscapableChars.test(str) ? str.replace(reEscapableChars, chr => charToEscapedMap[chr]) : str;
+export function escapeHTML(str: string): string {
+	return reEscapableChars.test(str) ? str.replace(reEscapableChars, (chr) => charToEscapedMap[chr]) : str;
 }
