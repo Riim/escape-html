@@ -1,1 +1,1 @@
-export declare function escapeHTML(str: string | null): string | null;
+export declare function escapeHTML<T extends string | null>(str: T): T;

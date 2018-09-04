@@ -7,10 +7,10 @@ charToEscapedMap['<'] = '&lt;';
 charToEscapedMap['>'] = '&gt;';
 charToEscapedMap['"'] = '&quot;';
 function escapeHTML(str) {
-    return str
+    return (str
         ? reEscapableChars.test(str)
             ? str.replace(reEscapableChars, function (chr) { return charToEscapedMap[chr]; })
             : str
-        : null;
+        : null);
 }
 exports.escapeHTML = escapeHTML;

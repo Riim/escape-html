@@ -6,10 +6,10 @@ escapedToCharMap['&lt;'] = '<';
 escapedToCharMap['&gt;'] = '>';
 escapedToCharMap['&quot;'] = '"';
 
-export function unescapeHTML(str: string | null): string | null {
-	return str
-		? reEscapableEntities.test(str)
+export function unescapeHTML<T extends string | null>(str: T): T {
+	return (str
+		? reEscapableEntities.test(str!)
 			? str.replace(reEscapableEntities, entity => escapedToCharMap[entity])
 			: str
-		: null;
+		: null) as T;
 }
