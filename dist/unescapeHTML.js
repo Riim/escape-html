@@ -7,6 +7,10 @@ escapedToCharMap['&lt;'] = '<';
 escapedToCharMap['&gt;'] = '>';
 escapedToCharMap['&quot;'] = '"';
 function unescapeHTML(str) {
-    return reEscapableEntities.test(str) ? str.replace(reEscapableEntities, function (entity) { return escapedToCharMap[entity]; }) : str;
+    return str
+        ? reEscapableEntities.test(str)
+            ? str.replace(reEscapableEntities, function (entity) { return escapedToCharMap[entity]; })
+            : str
+        : null;
 }
 exports.unescapeHTML = unescapeHTML;

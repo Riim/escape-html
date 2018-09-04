@@ -1,7 +1,2 @@
-import { escapeHTML } from './escapeHTML';
-import { unescapeHTML } from './unescapeHTML';
-
-export {
-	escapeHTML,
-	unescapeHTML
-};
+export { escapeHTML } from './escapeHTML';
+export { unescapeHTML } from './unescapeHTML';

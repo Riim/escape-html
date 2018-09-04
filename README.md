@@ -11,9 +11,11 @@ npm install escape-html --save
 ## Usage
 
 ```js
-import escapeHTML from 'escape-html';
-// or `var escapeHTML = require('escape-html').default;`
+import { escapeHTML, unescapeHTML } from 'escape-html';
 
-escapeHTML(` & < > " `);
-// => ` &amp; &lt; &gt; &quot; `
+escapeHTML(' & < > " ');
+// => ' &amp; &lt; &gt; &quot; '
+
+unescapeHTML(' &amp; &lt; &gt; &quot; ');
+// => ' & < > " '
 ```
